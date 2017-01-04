@@ -4,12 +4,12 @@ namespace Irazasyed\GsuiteChecker;
 
 use Generator;
 use GuzzleHttp\Client;
-use GuzzleHttp\Promise;
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * Class GsuiteChecker
+ * Class GsuiteChecker.
  */
 class GsuiteChecker
 {
@@ -28,17 +28,17 @@ class GsuiteChecker
     /**
      * Create a new instance of GsuiteChecker with provided domains.
      *
-     * @param  mixed $domains
+     * @param mixed $domains
      */
     public function __construct($domains = [])
     {
-        $this->domains = (array)$domains;
+        $this->domains = (array) $domains;
     }
 
     /**
      * Create a new instance if the value isn't one already.
      *
-     * @param  mixed $domains
+     * @param mixed $domains
      *
      * @return static
      */
@@ -128,13 +128,13 @@ class GsuiteChecker
         /** @var string $domain Get the domain */
         $domain = $this->domains[$index];
 
-        /** Remove it from the list */
+        /* Remove it from the list */
         unset($this->domains[$index]);
 
         /** @var $status Gsuite status of the domain */
         $status = $this->status($response);
 
-        /** Put the domain and status to the list */
+        /* Put the domain and status to the list */
         $this->domains[$domain] = $status;
     }
 
@@ -157,14 +157,14 @@ class GsuiteChecker
     /**
      * Determine if a given string contains a given substring.
      *
-     * @param  string       $haystack
-     * @param  string|array $needles
+     * @param string       $haystack
+     * @param string|array $needles
      *
      * @return bool
      */
     protected function strContains($haystack, $needles)
     {
-        foreach ((array)$needles as $needle) {
+        foreach ((array) $needles as $needle) {
             if ($needle != '' && mb_strpos($haystack, $needle) !== false) {
                 return true;
             }
