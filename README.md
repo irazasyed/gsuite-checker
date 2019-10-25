@@ -1,11 +1,9 @@
 # GSuite Checker
 
-[![Join the PHP Chat community][ico-phpchat]][link-phpchat]
+[![Join PHP Chat][ico-phpchat]][link-phpchat]
+[![Chat on Telegram][ico-telegram]][link-telegram]
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 > Google Suite AKA GSuite (Formerly known as Google Apps) Checker for Domains. It lets you determine if a domain has an active GSuite Account.
@@ -59,7 +57,8 @@ If you discover any security related issues, please email syed at lukonet.com in
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-phpchat]: https://img.shields.io/badge/Join-PHP%20Chat-blue.svg?style=flat-square
+[ico-phpchat]: https://img.shields.io/badge/Slack-PHP%20Chat-5c6aaa.svg?style=flat-square&logo=slack&labelColor=4A154B
+[ico-telegram]: https://img.shields.io/badge/@PHPChatCo-2CA5E0.svg?style=flat-square&logo=telegram&label=Telegram
 [ico-version]: https://img.shields.io/packagist/v/irazasyed/gsuite-checker.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/irazasyed/gsuite-checker/master.svg?style=flat-square
@@ -68,6 +67,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/packagist/dt/irazasyed/gsuite-checker.svg?style=flat-square
 
 [link-phpchat]: https://phpchat.co/?ref=gsuite-checker
+[link-telegram]: https://t.me/PHPChatCo
 [link-packagist]: https://packagist.org/packages/irazasyed/gsuite-checker
 [link-travis]: https://travis-ci.org/irazasyed/gsuite-checker
 [link-scrutinizer]: https://scrutinizer-ci.com/g/irazasyed/gsuite-checker/code-structure
